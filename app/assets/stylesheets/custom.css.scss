@@ -1,2 +1,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.container {
+    text-align:center;
+    background-image:url("/8956.JPG");
+    background-size:cover;
+    height:700px;
+}
