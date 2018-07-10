@@ -1,9 +1,18 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.navbar {
+     background-color: rgba(255,0,0,0);
+     border-style:none;
+}
+
+
 .container {
     text-align:center;
     background-image:url("/8956.JPG");
+    background-position: center center;
     background-size:cover;
     height:700px;
+    width: 100%;
+
 }
