@@ -1,13 +1,25 @@
+<div class="container">
  <%= render ("navbar") %>
- 
+
 <h1>Please register your info here</h1>
 
 
 <%= form_tag("/welcome/login") do %>
 
-<p>氏名</p>
+<p>おなまえ</p>
 <input name="name">
+
 <p>Email</p>
 <input name="email">
+
+<p>苦手な食べ物（アレルギー等）</p>
+<input name="allergy">
+
+<p>これまで出会ったなかで一番良い本・マンガ</p>
+<input name="book">
+<p>と、その理由</p>
+<input name="description">
+<p></p>
 <input type="submit">
 <% end %>
+</div>

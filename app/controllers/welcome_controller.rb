@@ -21,9 +21,15 @@ class WelcomeController < ApplicationController
     @article = Article.new
     @article.name = params[:name]
     @article.email = params[:email]
+    @article.allergy =params[:allergy]
+    @article.book = params[:book]
+    @article.description = params[:description]
     @article.save
     redirect_to ("/welcome/index")
     
+  end
+  
+  def detail
   end
   
 end

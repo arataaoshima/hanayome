@@ -1,13 +1,13 @@
 class UsersController < ApplicationController
     
     def new
+        @user = User.new
     end
     
     def create
-        @user = User.new
-        @user.username = params[:name]
+        @user = User.new(username: params[:username])
         @user.save
-        redirect_to("/users")
+        redirect_to("/")
     end
     
     def show

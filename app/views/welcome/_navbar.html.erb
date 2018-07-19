@@ -20,12 +20,16 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/about">About us</a></li>
+            <% if @current_user == nil %>
             <li><a href="/users/login">Login</a></li>
-            <li><a href="#">Something else here</a></li>
+            <% end %>
+            <li><a href="/detail">Detail</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Separated link</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+            <% if @current_user %>
+            <li><a href="#"><%= link_to("ログアウト","/logout", {method: "post"}) %></a></li>
+            <% end %>
           </ul>
         </li>
       </ul>
@@ -36,13 +40,15 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-         <% if session[:user_id] %>
-        <li><a><%= session[:user_id]%></a></li> 
-        <li><a>Welcome!</a></li>
+         <% if @current_user %>
+        <li><a> Login as:<%= @current_user.username %></a></li> 
          <% end %>
+  
         <li><a href="/place">Location</a></li>
-         <% if session[:user_id] %>
-        <li class="dropdown">
+        
+       <% if @current_user %>
+         <% if @current_user.admin? %>
+          <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin Page <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/welcome/index">Guest Info</a></li>
@@ -50,7 +56,10 @@
             <li><a href="/users">Users Index</a></li>
             <li role="separator" class="divider"></li>
             <li><a><%= link_to("ログアウト","/logout", {method: "post"}) %></a></li>
-            <% end %>
+          <% end %>
+        <% end %>
+            
+            
           </ul>
         </li>
       </ul>

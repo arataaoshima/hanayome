@@ -8,6 +8,7 @@ Rails.application.routes.draw do
  post "/logout" =>"users#logout"
   
   get 'welcome/index'
+ 
   
  
   # The priority is based upon order of creation: first created -> highest priority.
@@ -23,6 +24,7 @@ Rails.application.routes.draw do
   get 'about' => 'welcome#about'
   get 'place' => 'welcome#place'
   post 'welcome/login' =>"welcome#login"
+  get 'detail' => "welcome#detail"
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 

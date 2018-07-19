@@ -1,6 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+
 .navbar {
      background-color: rgba(255,0,0,0);
      border-style:none;
@@ -8,11 +10,68 @@
 
 
 .container {
+    font-family:'Noto Sans Japanese','Yu Gothic',YuGothic,sans-serif;;
     text-align:center;
+   
+}
+
+.homepage {
     background-image:url("/8956.JPG");
     background-position: center center;
     background-size:cover;
     height:700px;
     width: 100%;
+    
+}
 
+.msg-container{
+     font-family:'Noto Sans Japanese','Yu Gothic',YuGothic,sans-serif;;
+     text-align:center;
+     
+     height:400px;
+     width:80%;
+     margin:0 auto;
+}
+
+.msg-container h3{
+    line-height:2.5em;
+}
+
+  
+
+
+.login {
+    background-image:url("/1666.JPG");
+    background-position: center center;
+    background-size:cover;
+    height:700px;
+    width: 100%;
+}
+
+.lounge_image{
+    height:30px;
+}
+
+.centre-profile{
+    width:200px;
+    margin-left:50px;
+    margin-right:50px;
+    opacity:0;
+}
+.thumbnail {
+    display: inline-block; 
+    height: 250px;
+    margin-bottom: 15px;
+    margin: auto;
+}
+.thumbnail img {
+    height: 100%;
+}
+
+.about-background{
+    background-image:url("/1666.JPG");
+    background-position: center center;
+    background-size:cover;
+    height:700px;
+    width: 100%;
 }
