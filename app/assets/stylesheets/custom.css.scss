@@ -2,6 +2,21 @@
 @import "bootstrap";
 
 
+@font-face {
+  font-family: 'azuki';
+  src: font-url('/assets/azuki.ttf') format('truetype'),
+       font-url('/assets/azuki.eot');
+  
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  font-family: 'azuki', sans-serif, "Helvetica Neue",Helvetica,Arial,"Yu Gothic",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo !important;
+}
+
+
 
 .navbar {
      background-color: rgba(255,0,0,0);
@@ -10,7 +25,7 @@
 
 
 .container {
-    font-family:'Noto Sans Japanese','Yu Gothic',YuGothic,sans-serif;;
+    font-family: 'azuki font', 'Noto Sans Japanese','Yu Gothic',YuGothic,sans-serif;
     text-align:center;
    
 }
@@ -24,14 +39,6 @@
     
 }
 
-.msg-container{
-     font-family:'Noto Sans Japanese','Yu Gothic',YuGothic,sans-serif;;
-     text-align:center;
-     
-     height:400px;
-     width:80%;
-     margin:0 auto;
-}
 
 .msg-container h3{
     line-height:2.5em;
@@ -74,4 +81,31 @@
     background-size:cover;
     height:700px;
     width: 100%;
+}
+
+
+
+.frame-top{
+    float:left;
+    height:0px;
+}
+
+.frame-top-img {
+    width:300px;
+    
+}
+
+.home-msg-wrapper{
+    padding-top:100px;
+    font-family: 'azuki',sans-serif;
+     text-align:center;
+     height:400px;
+     width:80%;
+     margin:0 auto;
+    
+}
+
+.home-msg-wrapper h3{
+    line-height:2.5em;
+    font-size:2em;
 }
