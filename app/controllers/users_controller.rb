@@ -16,6 +16,11 @@ class UsersController < ApplicationController
     
     def login_page
         @user = User.new
+        
+        if @current_user
+            redirect_to("/welcome/home")
+        end
+        
     end
     
     def login
@@ -31,7 +36,7 @@ class UsersController < ApplicationController
     
     def logout
         session[:user_id] = nil
-        redirect_to("/users/login")
+        redirect_to("/")
     end
     
 end

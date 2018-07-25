@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   
  resource :users
  
- get "users/login" =>"users#login_page"
+ get "/" =>"users#login_page"
  post "users/login" =>"users#login"
  post "/logout" =>"users#logout"
   
@@ -19,7 +19,7 @@ Rails.application.routes.draw do
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
-  get '/' => 'welcome#home'
+  get 'welcome/home' => 'welcome#home'
   get 'attendance' => 'welcome#attendance'
   get 'about' => 'welcome#about'
   get 'place' => 'welcome#place'
