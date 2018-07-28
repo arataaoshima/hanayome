@@ -1,9 +1,9 @@
 <div class="container login">
 
-  <h2>Log in page</h2>
+  <h2>ここから入室してね</h2>
   <!-- Button trigger modal -->
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Password
+  あいことば
   </button> 
 </div>
 
@@ -13,7 +13,7 @@
     <div class="modal-content">
         <%= form_tag("/users/login") do %>
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Password</h5>
+        <h5 class="modal-title" id="exampleModalLabel">あいことば</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -25,9 +25,9 @@
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
         
-        <input type="submit" class="btn">
+        <input type="submit" value="入室" class="btn">
       </div>
       <% end %>
     </div>
