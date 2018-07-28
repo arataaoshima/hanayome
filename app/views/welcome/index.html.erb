@@ -1,13 +1,27 @@
  <%= render ("navbar") %>
 
-<h1>Guest list</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
-<% @articles.each do |guest| %>
-<%= guest.name %>
-<%= guest.email %></br>
-<% end %>
+<h1 align="center">Guest list</h1>
 
-
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">お名前</th>
+          <th scope="col">Email</th>
+          <th scope="col">アレルギー</th>
+          <th scope="col">本・マンガ</th>
+        </tr>
+      </thead>
+      <% @articles.each do |guest| %>
+      <tbody>
+        <tr>
+          <td><%= guest.name %></td>
+          <td><%= guest.email %></td>
+          <td><%= guest.email %></td>
+          <td><%= guest.book %></td>
+        </tr>
+      </tbody>
+      <% end %>
+    </table>
 
 
 
