@@ -33,6 +33,7 @@
    
 }
 
+
 .homepage {
     background-image:url("/8956.JPG");
     background-position: center center;
@@ -110,7 +111,6 @@
      height:400px;
      width:70%;
      margin:0 auto;
-    
 }
 
 .home-msg-wrapper h3{
@@ -144,13 +144,20 @@
 }
 
 
-@media (max-width:1000px) {
-  /* h1のcolorをblueに指定してください */
-  .home-msg-wrapper h3{
+
+@media(max-width:600px) {
     
+     
+ .home-msg-wrapper{
+     width:90%;
+     
+ }   
+    
+ .home-msg-wrapper h3{
     line-height:1.5em;
     font-size:1.0em;
 }
-
-  
 }
+ 
+ 
+
