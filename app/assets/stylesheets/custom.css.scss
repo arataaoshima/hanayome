@@ -108,14 +108,14 @@
     font-family: 'azuki',sans-serif;
      text-align:center;
      height:400px;
-     width:80%;
+     width:70%;
      margin:0 auto;
     
 }
 
 .home-msg-wrapper h3{
-    line-height:2.5em;
-    font-size:2em;
+    line-height:2.0em;
+    font-size:1.8em;
 }
 
 .attendance-form{
@@ -125,4 +125,20 @@
 
 .attendance-form p {
     margin-top:30px;
+}
+
+.when {
+    margin-top:80px;
+    margin-bottom:80px;
+}
+
+.where {
+    margin-bottom:80px;
+    width:70%;
+    margin:0 auto;
+}
+
+.map{
+    margin-top:80px;
+    margin-bottom:100px;
 }
