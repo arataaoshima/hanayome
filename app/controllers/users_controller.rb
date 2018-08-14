@@ -6,6 +6,7 @@ class UsersController < ApplicationController
     
     def create
         @user = User.new(username: params[:username])
+        @user.admin = params[:admin]
         @user.save
         redirect_to("/")
     end

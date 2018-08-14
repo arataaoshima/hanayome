@@ -6,7 +6,12 @@
 
 <%= form_tag("/users") do %>
 
+
 <p>なまえ</p>
 <input name="username">
+
+<%= check_box_tag(:admin) %>
+<%= label_tag(:admin, "I am admin User") %> </br>
+
 <input type="submit">
 <% end %>
